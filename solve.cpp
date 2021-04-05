@@ -41,6 +41,11 @@ const int di[4] = {-1, 0, 1, 0};
 const int dj[4] = {0, 1, 0, -1};
 const char dr[4] = {'U', 'R', 'D', 'L'};    
 
+
+void test() {
+
+}
+
 vector<int> z_function(string s) {
     int n = (int) s.length();
     vector<int> z(n);
