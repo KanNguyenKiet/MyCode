@@ -41,27 +41,6 @@ const int di[4] = {-1, 0, 1, 0};
 const int dj[4] = {0, 1, 0, -1};
 const char dr[4] = {'U', 'R', 'D', 'L'};    
 
-// void make_z(string a, int n, vector<int> &F) {
-//     int L = -1, R = -1;
-//     F[0] = n;
-//     for (int i = 1; i < n; i++) {
-//         if (i > R) {
-//             L = i;
-//             R = i - 1;
-//             while (R < n - 1 && a[R + 1] == a[R - L + 1]) R++;
-//             F[i] = R - L + 1;
-//         } else {
-//             if (F[i - L] < R - i + 1)
-//                 F[i] = F[i - L];
-//             else {
-//                 L = i;
-//                 while (R < n - 1 && a[R + 1] == a[R - L + 1]) R++;
-//                 F[i] = R - L + 1;
-//             }
-//         }
-//     }
-// }
-
 vector<int> z_function(string s) {
     int n = (int) s.length();
     vector<int> z(n);
